@@ -1,3 +1,13 @@
 <p>
   Welcome!
 </p>
+
+<a href="/food/new">Add a new food</a><br>
+<br>
+<ul>
+<% array_of_foods.each do |food| %>
+<b><%= food[:name] %> </b>
+ <li> <%= food[:ethnicity] %>
+ <li> <%= food[:year_eaten] %>
+<% end %>
+  </ul>
